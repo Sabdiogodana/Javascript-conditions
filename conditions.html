@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+for ( var i = 1; i <= 100; i++ )
+{
+  if ( i%3 === 0 && i%5 === 0 )
+  {
+    console.log( i + " FizzBuzz" );
+  }
+  else if ( i%3 === 0 ) 
+  {
+    console.log(i+ " Fizz" );
+  }
+  else if ( i%5 === 0 ) 
+  {
+    console.log(i+ " Buzz" );
+  }
+  else
+  {
+    console.log(i);
+  }
+}
+var sum = 0;
+for (var x = 0; x < 1000; x++)
+{
+    if (x % 3 === 0 || x % 5 === 0)
+    {
+       sum += x;
+    }
+}
+console.log(sum);
+
+for (var num=0; num<=15; num++) {
+        if (num === 0) {
+                console.log(num +  " is even");
+        }
+        else if (num % 2 === 0) {
+                console.log(num + " is even");   
+        }
+        else {
+                console.log(num + " is odd");
+        }
+}
+
+function largestnumber(){
+  var number=[-2, 4, -5, 6, 0];
+  var  largest=[0];
+   for (var num=0;num<number.length; num++){
+    if (number[num]>largest){
+      largest=number[num]
+    }
+   }
+   console.log(largest)
+}
+largestnumber()
+
+function largest(){
+  var a = 10
+  var b = 40
+  var large=(10<40)?"40 is greatest":"10"
+    console.log(large)
+  }
+  
+largest()
+
+
+function leap_year(){
+  for ( var y=2000;y<=2022;y++){
+    if (y%4==0)
+    console.log(y + " is leap year from 2000 to 2022")
+  }
+}
+leap_year()
+
+    </script>
+</body>
+</html>
+
+
